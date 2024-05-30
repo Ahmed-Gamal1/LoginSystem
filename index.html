@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+
+  <div id="loginPage" class="container my-5 text-center">
+    <div class="card m-auto w-50 p-5 shadow-lg">
+        <h1 class="card-title mb-4">Smart Login System</h1>
+
+        <div id="signUpForm">
+            <input id="signupName" class="form-control my-3" placeholder="Enter your name" type="text">
+            <input id="signupEmail" class="form-control my-3" placeholder="Enter your email" type="email">
+            <input id="signupPassword" class="form-control my-3" placeholder="Enter password" type="password">
+            <p id="exist" class="text-danger"></p>
+
+            <button onclick="signUp()" class="btn btn-outline-primary w-100 my-3">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showSignInForm()">Sign in</a></p>
+        </div>
+
+        <div id="signInForm" class="d-none">
+            <input id="signinEmail" class="form-control my-3" placeholder="Enter your email" type="email">
+            <input id="signinPassword" class="form-control my-3" placeholder="Enter password" type="password">
+            <p id="signInMessage" class="text-danger"></p>
+
+            <button onclick="signIn()" class="btn btn-outline-primary w-100 my-3">Sign In</button>
+            <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign up</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="homePage" class="d-none container my-5 text-center">
+    <div class="card m-auto w-50 p-5 shadow-lg">
+        <h1 class="card-title mb-4">Welcome, <span id="welcomeName"></span>!</h1>
+        <button onclick="logout()" class="btn btn-outline-danger w-100 my-3">Log Out</button>
+    </div>
+</div>
+    <script src="js/index.js"></script>
+</body>
+</html>

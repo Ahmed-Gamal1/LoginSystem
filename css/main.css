@@ -1,0 +1,52 @@
+body {
+  background-color: #fffdd0;
+}
+
+.card {
+  background-color: #fffdd0;
+  border-radius: 15px;
+  border: none;
+}
+
+.card-title {
+  color: #343a40;
+}
+
+input::placeholder {
+  color: #6c757d;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
